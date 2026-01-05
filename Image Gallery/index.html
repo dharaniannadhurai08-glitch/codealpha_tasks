@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Responsive Image Gallery</h1>
+
+    <!-- Filter Buttons -->
+    <div class="filters">
+        <button onclick="filterImages('all')">All</button>
+        <button onclick="filterImages('nature')">Nature</button>
+        <button onclick="filterImages('city')">City</button>
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="gallery">
+    <!-- Old images -->
+    <img src="https://picsum.photos/id/1018/400/300" class="nature" onclick="openLightbox(0)">
+    <img src="https://picsum.photos/id/1015/400/300" class="nature" onclick="openLightbox(1)">
+    <img src="https://picsum.photos/id/1011/400/300" class="city" onclick="openLightbox(2)">
+    <img src="https://picsum.photos/id/1003/400/300" class="city" onclick="openLightbox(3)">
+    <img src="https://picsum.photos/id/1025/400/300" class="nature" onclick="openLightbox(4)">
+    <img src="https://picsum.photos/id/1031/400/300" class="city" onclick="openLightbox(5)">
+    <img src="https://picsum.photos/id/1040/400/300" class="nature" onclick="openLightbox(6)">
+    <img src="https://picsum.photos/id/1041/400/300" class="nature" onclick="openLightbox(7)">
+    <img src="https://picsum.photos/id/1042/400/300" class="city" onclick="openLightbox(8)">
+    <img src="https://picsum.photos/id/1043/400/300" class="city" onclick="openLightbox(9)">
+    <img src="https://picsum.photos/id/1050/400/300" class="nature" onclick="openLightbox(10)">
+    <img src="https://picsum.photos/id/1051/400/300" class="city" onclick="openLightbox(11)">
+    <img src="https://picsum.photos/id/1052/400/300" class="nature" onclick="openLightbox(12)">
+    <img src="https://picsum.photos/id/1053/400/300" class="city" onclick="openLightbox(13)">
+
+
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">✖</span>
+        <span class="nav prev" onclick="changeImage(-1)">❮</span>
+        <img id="lightbox-img">
+        <span class="nav next" onclick="changeImage(1)">❯</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
